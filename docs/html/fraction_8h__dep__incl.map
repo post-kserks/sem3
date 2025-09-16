@@ -1,0 +1,9 @@
+<map id="fraction.h" name="fraction.h">
+<area shape="rect" id="Node000001" title="Header file for the Fraction library." alt="" coords="127,5,211,31"/>
+<area shape="rect" id="Node000002" href="$fraction_8cpp.html" title=" " alt="" coords="5,79,104,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,40,75,81,72,76,138,35"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="128,79,211,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,44,172,79,167,79,167,44"/>
+<area shape="rect" id="Node000004" href="$test_8cpp.html" title=" " alt="" coords="235,79,309,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,36,257,76,254,81,196,41"/>
+</map>

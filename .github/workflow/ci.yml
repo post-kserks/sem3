@@ -1,0 +1,35 @@
+name: Simple C++ CI
+
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+
+    - name: Compile Library
+      run: g++ -c fraction.cpp -o fraction.o
+
+    - name: Compile Application
+      run: g++ main.cpp fraction.o -o fraction_app
+
+    - name: Compile Tests
+      run: g++ test.cpp fraction.o -o test_app
+
+    - name: Run Tests
+      run: ./test_app
+
+    - name: Generate Documentation
+      run: doxygen Doxyfile
+
+    - name: Archive Documentation
+      uses: actions/upload-artifact@v3
+      with:
+        name: documentation
+        path: docs/
